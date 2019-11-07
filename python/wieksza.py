@@ -2,15 +2,19 @@
 # -*- coding: utf-8 -*-
 
 def main(args):
-   # a = 10
-   a = input ("podaj liczbę: ")
-   # b = 5
-   b = input ("podaj liczbę: ")
-   if a > b:
-       print(a)
-       else:
-           print(b)
-    print("suma:", a + b)
+    # a = 10
+    a = int(input ("podaj liczbę: "))
+    # b = 5
+    b = int(input ("podaj liczbę: "))
+    if a > b:
+        print("a > b")
+    elif b > a:
+        print("b > a")
+    else:
+        print("a = b")
+        
+        
+        print(a + b)
     return 0
 
 if __name__ == '__main__':
