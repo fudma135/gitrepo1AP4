@@ -23,10 +23,30 @@
 
 
 #include <iostream>
+
 using namespace std;
+
 int main(int argc, char **argv)
 {
-	
+    int a;
+    int b;
+    float x;
+    cout << "Witaj w C++";
+    cout <<"Podaj liczbę a:";
+    cin >> a;
+    cout <<"Podaj liczbę b:";
+    cin >> b;
+    if (a==0) {
+        if (b == 0) {
+            cout << "nieskończenie wiele rozwiązań";
+        } else {
+            cout <<"równanie sprzeczne";
+        }
+        
+    } else {
+        x=-b/(float)a;
+        cout << x;
+    }
 	return 0;
 }
 
