@@ -37,7 +37,19 @@ void sumujw(int t[][10],int w,int k){
       }
   
     }
-
+ void sumujk(int t[][10],int w,int k){
+    int sumak=0;
+    srand(time(NULL));
+       for(int i=0; i<k; i++){
+      for(int j=0; j<k; j++) {
+      cout<<setw(4)<<t[j][i];
+      sumak=sumak+t[j][i];
+      } 
+       cout<<setw(6)<<sumak<<endl;
+    
+      }
+  
+    }
 int main(int argc, char **argv)
 {
     
